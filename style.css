@@ -60,7 +60,7 @@ nav {
     background-color: #149f39;
     padding: 5px 10px;
     color: white;
-    align-items: flex-start;
+    align-self: flex-start;
 }
 
 .hero_content h1 {
