@@ -187,6 +187,93 @@ footer {
     gap: 15px;
     font-size: 32px;
 }
+
+
+/* footer styles */
+
+footer{
+    width: 100%;
+    height: 100%px;
+    background-color: #149f39ff;
+    margin-top: 25px;
+    /* position: absolute;
+    bottom: 0; */
+    
+}
+.footer_container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.footer-section1 img{
+    margin-bottom: 5px;
+}
+
+.footer-section1 p{
+    color: #fff0db;
+}
+.footer-section2 div{
+    display: flex; 
+    margin-bottom: 10px; 
+}
+
+.footer-section2 div i{
+    margin-right: 10px;
+}
+
+.footer-section2 div a{
+    text-decoration: none;
+    color:#fff0db;
+}
+
+.footer-section2 div p{
+    color: #fff0db;
+}
+
+.quick-access{
+    margin-bottom: 5px;
+}
+
+.quick-access a{
+    text-decoration: none;
+    color: #fff0db;
+    /* margin-right: 10px; */
+}
+
+.quick-access a::after{
+    content: "\00b7"; 
+    margin: 0 10px;
+}
+
+.quick-access a:last-child::after{
+    content: none;
+}
+
+.quick-access p{
+    color: #000;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+.social-icon {
+    margin-top: 8px;
+}
+.social-icon a{
+    color: #fff0db;
+    margin-right: 10px;
+    width: 80px;
+    height: 100%;
+}
+
+.footer-section3 p{
+    color: #fff0db;
+}
+
 @media (max-width: 786px) {
     .hero {
         flex-direction: column;
@@ -219,7 +306,15 @@ footer {
     .grid-image {
         border-radius: 0px;
     }
-    .footer_container {
+
+    .footer_container{
         flex-direction: column;
+        /* align-items: center; */
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .footer-section1 img{
+        margin-bottom: 10px;
     }
 }
