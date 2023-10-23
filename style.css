@@ -318,3 +318,31 @@ footer{
         margin-bottom: 10px;
     }
 }
+.slider-container {
+    display: flex;
+    overflow: hidden;
+    width: 20vw; /* Set the width of the slider container */
+    height: 20vw;
+    margin-left: 15vw;
+    margin-top: 10vh;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a box shadow */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 20vw; /* Square images with a length of 4vw */
+    height: 20vw;
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a box shadow to each image */
+    margin-right: 10px; /* Add spacing between slides */
+    border-radius: 10px; /* Add rounded corners to each image */
+}
+#logo{
+    margin-right: 0vw;
+}

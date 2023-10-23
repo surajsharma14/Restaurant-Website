@@ -26,7 +26,40 @@
         <div class="hero">
             <!-- ... (existing code) ... -->
         </div>
+        
     </div>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide" style="background-image: url('images/grid_image1.png');"></div>
+            <div class="slide" style="background-image: url('images/grid_image2.png');"></div>
+            <div class="slide" style="background-image: url('images/grid_image3.png');"></div>
+            <div class="slide" style="background-image: url('images/grid_image4.png');"></div>
+            <div class="slide" style="background-image: url('images/grid_image5.png');"></div>
+            <div class="slide" style="background-image: url('images/grid_image6.png');"></div>
+            <div class="slide" style="background-image: url('images/grid_image7.png');"></div>
+        </div>
+    </div>
+    <script>
+        // JavaScript for sliding the images
+        const slider = document.querySelector('.slider');
+        let slideIndex = 0;
+
+        function nextSlide() {
+            slideIndex++;
+            if (slideIndex === 7) {
+                slideIndex = 0;
+            }
+            updateSlider();
+        }
+
+        function updateSlider() {
+            slider.style.transform = `translateX(-${slideIndex * 20}vw)`;
+        }
+
+        setInterval(nextSlide, 2000); // Auto-slide every 3 seconds
+    </script>
+      
     <section class="features">
         <!-- ... (existing code) ... -->
     </section>
